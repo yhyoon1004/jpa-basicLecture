@@ -19,14 +19,21 @@ public class JpaMain {
 		tx.begin();//트렌젝션 처리 시작
 
 		try{
-			//JPQL을 사용한 sql 처리
+
+			Member member = new Member();
+			member.setId(3L);
+			member.setUsername("C");
+			member.setRoleType(RoleType.GEUST);
+			em.persist(member);
+
+/*			//JPQL을 사용한 sql 처리
 			List<Member> result = em.createQuery("select m from Member as m", Member.class)
 					.setFirstResult(5)
 					.setMaxResults(8)
 					.getResultList();
 			 for (Member member : result) {
 				 System.out.println("member.name = "+member.getName() );
-			}
+			}*/
 /*
 //			DB에 값을 insert하는 코드
 			Member member = new Member();

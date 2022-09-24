@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="jpa persistence.xml 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/RoleType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -42,6 +45,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="hellojpa" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hellojpa.JpaMain" />
@@ -72,7 +80,9 @@
       <updated>1663411047078</updated>
       <workItem from="1663411048961" duration="2351000" />
       <workItem from="1663486214714" duration="5119000" />
-      <workItem from="1663502741487" duration="3264000" />
+      <workItem from="1663502741487" duration="3953000" />
+      <workItem from="1663553808850" duration="1277000" />
+      <workItem from="1663984088004" duration="6098000" />
     </task>
     <task id="LOCAL-00001" summary="jpa persistence.xml 설정">
       <created>1663413413421</created>
@@ -81,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663413413421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리">
+      <created>1663506154692</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663506154692</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jpa persistence.xml 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="jpa persistence.xml 설정" />
+    <MESSAGE value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
   </component>
 </project>
