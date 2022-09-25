@@ -21,9 +21,9 @@ public class JpaMain {
 		try{
 
 			Member member = new Member();
-			member.setId(3L);
+//			member.setId(3L);
 			member.setUsername("C");
-			member.setRoleType(RoleType.GEUST);
+//			member.setRoleType(RoleType.GEUST);
 			em.persist(member);
 
 /*			//JPQL을 사용한 sql 처리

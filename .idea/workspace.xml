@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/RoleType.java" afterDir="false" />
+    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="DDL auto 와 RDB테이블 매핑 어노테이션">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +81,9 @@
       <workItem from="1663502741487" duration="3953000" />
       <workItem from="1663553808850" duration="1277000" />
       <workItem from="1663984088004" duration="6098000" />
+      <workItem from="1664030010102" duration="203000" />
+      <workItem from="1664062090782" duration="51000" />
+      <workItem from="1664074686470" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="jpa persistence.xml 설정">
       <created>1663413413421</created>
@@ -98,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663506154692</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DDL auto 와 RDB테이블 매핑 어노테이션">
+      <created>1664030068928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664030068928</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jpa persistence.xml 설정" />
     <MESSAGE value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
-    <option name="LAST_COMMIT_MESSAGE" value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
+    <MESSAGE value="DDL auto 와 RDB테이블 매핑 어노테이션" />
+    <option name="LAST_COMMIT_MESSAGE" value="DDL auto 와 RDB테이블 매핑 어노테이션" />
   </component>
 </project>
