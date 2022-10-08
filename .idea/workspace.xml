@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="DDL auto 와 RDB테이블 매핑 어노테이션">
+    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="테이블 컬럼, 기본키 매핑">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -33,16 +34,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/yhyoo/바탕 화면/Source Folder/ex1-hello-jpa",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hellojpa" />
@@ -83,7 +85,12 @@
       <workItem from="1663984088004" duration="6098000" />
       <workItem from="1664030010102" duration="203000" />
       <workItem from="1664062090782" duration="51000" />
-      <workItem from="1664074686470" duration="2349000" />
+      <workItem from="1664074686470" duration="2420000" />
+      <workItem from="1665071343805" duration="282000" />
+      <workItem from="1665129005720" duration="762000" />
+      <workItem from="1665218916619" duration="220000" />
+      <workItem from="1665219160455" duration="3017000" />
+      <workItem from="1665226245976" duration="11170000" />
     </task>
     <task id="LOCAL-00001" summary="jpa persistence.xml 설정">
       <created>1663413413421</created>
@@ -106,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664030068928</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="테이블 컬럼, 기본키 매핑">
+      <created>1664087291092</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664087291092</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +141,7 @@
     <MESSAGE value="jpa persistence.xml 설정" />
     <MESSAGE value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
     <MESSAGE value="DDL auto 와 RDB테이블 매핑 어노테이션" />
-    <option name="LAST_COMMIT_MESSAGE" value="DDL auto 와 RDB테이블 매핑 어노테이션" />
+    <MESSAGE value="테이블 컬럼, 기본키 매핑" />
+    <option name="LAST_COMMIT_MESSAGE" value="테이블 컬럼, 기본키 매핑" />
   </component>
 </project>

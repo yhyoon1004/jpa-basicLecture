@@ -19,12 +19,49 @@ public class JpaMain {
 		tx.begin();//트렌젝션 처리 시작
 
 		try{
+			//저장
+			Team team = new Team();
+			team.setName("TeamA");
+//			team.getMembers().add(member);
+			em.persist(team);
 
 			Member member = new Member();
-//			member.setId(3L);
-			member.setUsername("C");
-//			member.setRoleType(RoleType.GEUST);
+			member.setUsername("member1");
+			member.foreignKeySetTeam(team);
 			em.persist(member);
+
+
+			em.flush();
+			em.clear();
+
+			Team findTeam = em.find(Team.class, team.getId());
+			List<Member> findMembers = findTeam.getMembers();
+
+			for (Member m : findMembers) {
+				System.out.println("m = " + m.getUsername());
+			}
+
+//			Member findMember = em.find(Member.class, member.getId());
+//			List<Member> members = findMember.getTeam().getMembers();
+//
+//			for (Member m : members) {
+//				System.out.println("m.getUsername() = " + m.getUsername());
+//			}
+
+			tx.commit();//정상 수행 시 커밋하는 트렌젝션 메서드
+		}catch (Exception e){
+			tx.rollback();//에러 및 잘못 됬을 때 롤백하는 트렌젝션 메서드
+		}finally {
+			em.close();//DB처리를 성공하던 실패하던 entityManager를 닫아 줌
+		}
+		emf.close();
+	}
+}//end of class
+//			Member member = new Member();
+////			member.setId(3L);
+//			member.setUsername("C");
+////			member.setRoleType(RoleType.GEUST);
+//			em.persist(member);
 
 /*			//JPQL을 사용한 sql 처리
 			List<Member> result = em.createQuery("select m from Member as m", Member.class)
@@ -56,12 +93,12 @@ public class JpaMain {
 			*/
 
 
-			tx.commit();//정상 수행 시 커밋하는 트렌젝션 메서드
-		}catch (Exception e){
-			tx.rollback();//에러 및 잘못 됬을 때 롤백하는 트렌젝션 메서드
-		}finally {
-			em.close();//DB처리를 성공하던 실패하던 entityManager를 닫아 줌
-		}
-		emf.close();
-	}
-}
+//			Member findMember = em.find(Member.class, member.getId());
+//
+//			Team findTeam =  findMember.getTeam();
+//			System.out.println("findTeam = "+findTeam.getName());
+//
+//			//PK가 100인 Team테이블 있다고 가정, DB에 해당 테이블을 조회하는 sql저장소 등록
+//			Team newTeam = em.find(Team.class, 100L);
+//			//변경 영속감지 자동 flush();수행
+//			findMember.setTeam(newTeam);
