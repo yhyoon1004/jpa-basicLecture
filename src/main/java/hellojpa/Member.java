@@ -2,13 +2,15 @@ package hellojpa;
 
 import javax.persistence.*;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
-@TableGenerator(
-		name = "MEMBER_SEQ_GENERATOR",
-		table = "MY_SEQUENCES",
-		pkColumnValue = "MEMBER_SEQ", allocationSize = 1)
+//@TableGenerator(
+//		name = "MEMBER_SEQ_GENERATOR",
+//		table = "MY_SEQUENCES",
+//		pkColumnValue = "MEMBER_SEQ", allocationSize = 1)
 
 public class Member {
 
@@ -25,6 +27,17 @@ public class Member {
 	@ManyToOne
 	@JoinColumn(name="TEAM_ID")
 	private Team team;
+
+	@OneToOne
+	@JoinColumn(name="LOCKER_ID")
+	private Locker locker;
+	@OneToMany(mappedBy = "member")
+//	@JoinTable(name="MEMBER_PRODUCT")
+	private List<MemberProduct> products = new ArrayList<>();
+
+
+
+
 
 	public Long getId() {
 		return id;

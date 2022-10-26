@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="테이블 컬럼, 기본키 매핑">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Team.java" afterDir="false" />
+    <list default="true" id="6a23cf98-df4f-4380-b7b4-62933381af93" name="Changes" comment="외래키 매핑 ManyToOne, OneTo Many">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/DeliveryStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Locker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/MemberProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hellojpa/Member.java" afterDir="false" />
@@ -34,17 +39,17 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/yhyoo/바탕 화면/Source Folder/ex1-hello-jpa",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/yhyoo/바탕 화면/Source Folder/jpashopORM&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="hellojpa" />
@@ -90,7 +95,11 @@
       <workItem from="1665129005720" duration="762000" />
       <workItem from="1665218916619" duration="220000" />
       <workItem from="1665219160455" duration="3017000" />
-      <workItem from="1665226245976" duration="11170000" />
+      <workItem from="1665226245976" duration="11851000" />
+      <workItem from="1665285922200" duration="1474000" />
+      <workItem from="1665400594112" duration="659000" />
+      <workItem from="1665641081633" duration="1440000" />
+      <workItem from="1666765472195" duration="6110000" />
     </task>
     <task id="LOCAL-00001" summary="jpa persistence.xml 설정">
       <created>1663413413421</created>
@@ -120,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664087291092</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="외래키 매핑 ManyToOne, OneTo Many">
+      <created>1665245281359</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665245281359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +158,7 @@
     <MESSAGE value="JPA기초 사용 실습&#10;EntityManagerFactory와 EntityManager의 개념및 트렌젝션처리" />
     <MESSAGE value="DDL auto 와 RDB테이블 매핑 어노테이션" />
     <MESSAGE value="테이블 컬럼, 기본키 매핑" />
-    <option name="LAST_COMMIT_MESSAGE" value="테이블 컬럼, 기본키 매핑" />
+    <MESSAGE value="외래키 매핑 ManyToOne, OneTo Many" />
+    <option name="LAST_COMMIT_MESSAGE" value="외래키 매핑 ManyToOne, OneTo Many" />
   </component>
 </project>
