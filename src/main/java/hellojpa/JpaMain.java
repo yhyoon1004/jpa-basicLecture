@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class JpaMain {
@@ -19,17 +20,15 @@ public class JpaMain {
 		tx.begin();//트렌젝션 처리 시작
 
 		try{
-
 			Member member = new Member();
-			member.setUsername("member1");
+			member.setUsername("user1");
+			member.setCreateBy("kim");
+			member.setCreateDate(LocalDateTime.now());
 
 			em.persist(member);
 
-			Team team = new Team();
-			team.setName("teamA");
-			team.getMembers().add(member);
-
-			em.persist(team);
+			em.flush();
+			em.clear();
 
 			tx.commit();//정상 수행 시 커밋하는 트렌젝션 메서드
 		}catch (Exception e){
@@ -115,3 +114,14 @@ public class JpaMain {
 //			for (Member m : members) {
 //				System.out.println("m.getUsername() = " + m.getUsername());
 //			}
+
+//	Member member = new Member();
+//			member.setUsername("member1");
+//
+//			em.persist(member);
+//
+//			Team team = new Team();
+//			team.setName("teamA");
+//			team.getMembers().add(member);
+//
+//			em.persist(team);
